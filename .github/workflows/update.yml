@@ -1,0 +1,33 @@
+name: Auto Update News
+on:
+  schedule:
+    - cron: '0 0 * * *' # Runs automatically once a day
+  workflow_dispatch: # Allows you to run it manually
+
+jobs:
+  update-news:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+
+      - name: Install feedparser
+        run: pip install feedparser
+
+      - name: Run news generator script
+        run: python generate_news.py
+
+      - name: Save new articles to GitHub
+        run: |
+          git config --global user.name 'github-actions'
+          git config --global user.email 'github-actions@github.com'
+          git add src/content/blog/*.md
+          git commit -m "🤖 Auto-added latest BBC news" || exit 0
+          git push
