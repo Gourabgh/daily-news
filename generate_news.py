@@ -19,15 +19,16 @@ for entry in feed.entries[:5]:
     filename = f"{safe_title}.md"
     filepath = os.path.join(output_dir, filename)
 
+    # Format the date exactly how Astro wants it
     pub_date = datetime.now().strftime("%Y-%m-%d")
     clean_title = entry.title.replace('"', "'")
     clean_summary = entry.summary.replace('"', "'")
 
-    # Create the Markdown format that the Dante theme requires
+    # Create the Markdown format with 'publishDate' instead of 'pubDate'
     markdown_content = f"""---
 title: "{clean_title}"
 description: "{clean_summary}"
-pubDate: "{pub_date}"
+publishDate: {pub_date}
 ---
 
 {clean_summary}
