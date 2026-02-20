@@ -28,7 +28,7 @@ for entry in feed.entries[:5]:
     markdown_content = f"""---
 title: "{clean_title}"
 description: "{clean_summary}"
-publishDate: {pub_date}
+publishDate: "{pub_date}"
 ---
 
 {clean_summary}
