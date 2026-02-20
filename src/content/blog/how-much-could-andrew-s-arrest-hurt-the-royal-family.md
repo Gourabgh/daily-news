@@ -1,7 +1,7 @@
 ---
 title: "How much could Andrew's arrest hurt the Royal Family?"
 description: "Following Andrew's arrest, the King said the authorities have 'our full and wholehearted support and cooperation'."
-pubDate: "2026-02-20"
+publishDate: 2026-02-20
 ---
 
 Following Andrew's arrest, the King said the authorities have 'our full and wholehearted support and cooperation'.

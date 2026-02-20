@@ -1,7 +1,7 @@
 ---
 title: "Single nasal spray vaccine could protect against all colds and flus, researchers say"
 description: "A Stanford University team have tested their nasal spray vaccine in animals but still need to do human clinical trials."
-pubDate: "2026-02-20"
+publishDate: 2026-02-20
 ---
 
 A Stanford University team have tested their nasal spray vaccine in animals but still need to do human clinical trials.

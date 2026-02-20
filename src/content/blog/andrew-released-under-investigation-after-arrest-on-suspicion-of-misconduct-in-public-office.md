@@ -1,7 +1,7 @@
 ---
 title: "Andrew released under investigation after arrest on suspicion of misconduct in public office"
 description: "The former prince was pictured leaving a police station on Thursday evening, as police say searches in Norfolk have ended."
-pubDate: "2026-02-20"
+publishDate: 2026-02-20
 ---
 
 The former prince was pictured leaving a police station on Thursday evening, as police say searches in Norfolk have ended.
